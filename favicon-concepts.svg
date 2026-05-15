@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
+  <title id="title">Cuatro variaciones de favicon para Duglas Brenes</title>
+  <desc id="desc">Grid sobre fondo blanco con cuatro conceptos minimalistas: monograma DB, capas full stack, nodos de conectividad y arquitectura de código.</desc>
+  <rect width="960" height="300" fill="#FFFFFF"/>
+  <style>
+    .label { font: 700 18px Arial, sans-serif; fill: #061526; }
+    .note { font: 400 13px Arial, sans-serif; fill: #475569; }
+  </style>
+
+  <g transform="translate(60 42)">
+    <rect x="0" y="0" width="140" height="140" rx="32" fill="#061526"/>
+    <path fill="#2D9886" d="M31 27h37c26 0 46 18 46 43s-20 43-46 43H31V27Zm22 22v42h15c14 0 23-8 23-21s-9-21-23-21H53Z"/>
+    <path fill="#FFFFFF" d="M63 38h26c14 0 23 8 23 19 0 7-3 12-8 15 7 3 11 9 11 16 0 13-10 22-25 22H63V38Zm20 17v12h7c4 0 7-2 7-6s-3-6-7-6h-7Zm0 27v12h8c5 0 8-2 8-6s-3-6-8-6h-8Z"/>
+    <text x="70" y="184" text-anchor="middle" class="label">01 Monograma DB</text>
+    <text x="70" y="206" text-anchor="middle" class="note">Recomendado</text>
+  </g>
+
+  <g transform="translate(290 42)">
+    <rect x="0" y="0" width="140" height="140" rx="32" fill="#061526"/>
+    <rect x="35" y="34" width="70" height="18" rx="5" fill="#2D9886"/>
+    <rect x="28" y="61" width="84" height="18" rx="5" fill="#FFFFFF"/>
+    <rect x="35" y="88" width="70" height="18" rx="5" fill="#2D9886"/>
+    <text x="70" y="184" text-anchor="middle" class="label">02 Full Stack</text>
+    <text x="70" y="206" text-anchor="middle" class="note">Capas limpias</text>
+  </g>
+
+  <g transform="translate(520 42)">
+    <rect x="0" y="0" width="140" height="140" rx="32" fill="#061526"/>
+    <path d="M43 70h54M70 43v54M49 49l42 42M91 49 49 91" stroke="#2D9886" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="43" cy="70" r="11" fill="#FFFFFF"/>
+    <circle cx="97" cy="70" r="11" fill="#FFFFFF"/>
+    <circle cx="70" cy="43" r="11" fill="#2D9886"/>
+    <circle cx="70" cy="97" r="11" fill="#2D9886"/>
+    <text x="70" y="184" text-anchor="middle" class="label">03 Conectividad</text>
+    <text x="70" y="206" text-anchor="middle" class="note">Nodos de red</text>
+  </g>
+
+  <g transform="translate(750 42)">
+    <rect x="0" y="0" width="140" height="140" rx="32" fill="#061526"/>
+    <path d="M56 42 34 70l22 28M84 42l22 28-22 28" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M76 39 64 101" fill="none" stroke="#2D9886" stroke-width="10" stroke-linecap="round"/>
+    <text x="70" y="184" text-anchor="middle" class="label">04 Código</text>
+    <text x="70" y="206" text-anchor="middle" class="note">Arquitectura web</text>
+  </g>
+</svg>
