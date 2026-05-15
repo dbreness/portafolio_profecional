@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio profesional de Duglas Brenes Solís, Senior Full Stack Developer especializado en banca, seguros, finanzas, .NET, Java, React, Angular, Azure, Oracle y SQL Server." />
+  <title>Duglas Brenes Solís | Senior Full Stack Developer</title>
+
+  <!-- Fuente sans-serif moderna y legible para facilitar el escaneo por reclutadores. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS por CDN para mantener el sitio en un único archivo HTML. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
+          colors: {
+            navy: {
+              950: "#061526",
+              900: "#071B33",
+              800: "#0B2748",
+              700: "#123B63",
+            },
+            emeraldTech: {
+              700: "#046C4E",
+              600: "#047857",
+              500: "#059669",
+              400: "#10B981",
+            },
+            soft: {
+              50: "#F8FAFC",
+              100: "#EEF2F7",
+              200: "#DDE5EF",
+            },
+          },
+          boxShadow: {
+            neo: "8px 8px 18px #d7dee8, -8px -8px 18px #ffffff",
+            neoSm: "5px 5px 12px #d7dee8, -5px -5px 12px #ffffff",
+            neoInset: "inset 5px 5px 12px #d7dee8, inset -5px -5px 12px #ffffff",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-soft-50 font-sans text-slate-800 antialiased">
+  <!-- Header: navegación simple, persistente y optimizada para conversión. -->
+  <header class="sticky top-0 z-50 border-b border-soft-200 bg-white/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4" aria-label="Navegación principal">
+      <a href="#inicio" class="text-lg font-extrabold tracking-tight text-navy-900">
+        Duglas Brenes
+      </a>
+
+      <div class="hidden items-center gap-6 text-sm font-semibold text-slate-700 md:flex">
+        <a href="#experiencia" class="transition hover:text-emeraldTech-700">Experiencia</a>
+        <a href="#habilidades" class="transition hover:text-emeraldTech-700">Habilidades</a>
+        <a href="#logros" class="transition hover:text-emeraldTech-700">Logros</a>
+        <a href="#contacto" class="transition hover:text-emeraldTech-700">Contacto</a>
+      </div>
+
+      <a
+        href="#contacto"
+        class="rounded-lg bg-navy-900 px-4 py-2 text-sm font-bold text-white shadow-neoSm transition hover:bg-navy-800 focus:outline-none focus:ring-4 focus:ring-emeraldTech-400/40"
+      >
+        Hablemos
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / Estrategia: comunica especialidad, experiencia y CTAs principales. -->
+    <section id="inicio" class="relative overflow-hidden bg-soft-50">
+      <div class="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-[1.2fr_0.8fr] md:items-center md:py-24">
+        <div>
+          <p class="mb-4 inline-flex rounded-full bg-emeraldTech-500/10 px-4 py-2 text-sm font-bold text-emeraldTech-700">
+            +7 años en banca, seguros y finanzas
+          </p>
+
+          <h1 class="max-w-4xl text-4xl font-extrabold leading-tight tracking-tight text-navy-950 sm:text-5xl lg:text-6xl">
+            Duglas Brenes Solís
+            <span class="block text-emeraldTech-700">Senior Full Stack Developer</span>
+          </h1>
+
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
+            Desarrollo soluciones empresariales robustas con .NET, Java, React, Angular, Node.js,
+            Azure, Oracle y SQL Server. Especializado en sistemas críticos, integraciones cloud,
+            automatización de despliegues y seguridad 2FA.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="DOUGLAS_BRENES_SOLIS.pdf"
+              download
+              class="inline-flex items-center justify-center rounded-xl bg-emeraldTech-700 px-6 py-3 text-base font-bold text-white shadow-neo transition hover:bg-emeraldTech-600 focus:outline-none focus:ring-4 focus:ring-emeraldTech-400/50"
+              aria-label="Descargar CV de Duglas Brenes Solís en PDF"
+            >
+              Descargar CV
+            </a>
+
+            <a
+              href="mailto:duglasbrenes@gmail.com"
+              class="inline-flex items-center justify-center rounded-xl bg-soft-100 px-6 py-3 text-base font-bold text-navy-900 shadow-neo transition hover:text-emeraldTech-700 focus:outline-none focus:ring-4 focus:ring-emeraldTech-400/40"
+              aria-label="Enviar correo a Duglas Brenes Solís"
+            >
+              Contacto directo
+            </a>
+          </div>
+        </div>
+
+        <!-- Resumen visual accesible sin depender de imágenes externas. -->
+        <aside class="rounded-2xl bg-soft-100 p-6 shadow-neo" aria-label="Resumen profesional de Duglas Brenes">
+          <div class="rounded-2xl bg-white p-6 shadow-neoInset">
+            <div class="flex h-24 w-24 items-center justify-center rounded-2xl bg-navy-900 text-3xl font-extrabold text-white" aria-hidden="true">
+              DB
+            </div>
+
+            <div class="mt-6 space-y-4">
+              <div>
+                <p class="text-sm font-semibold text-slate-600">Especialidad</p>
+                <p class="text-xl font-extrabold text-navy-900">Full Stack Enterprise</p>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div class="rounded-xl bg-soft-50 p-4">
+                  <p class="text-2xl font-extrabold text-emeraldTech-700">7+</p>
+                  <p class="text-sm font-semibold text-slate-700">Años exp.</p>
+                </div>
+
+                <div class="rounded-xl bg-soft-50 p-4">
+                  <p class="text-2xl font-extrabold text-emeraldTech-700">Azure</p>
+                  <p class="text-sm font-semibold text-slate-700">Certified</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Experiencia / Estructura: timeline profesional con roles clave. -->
+    <section id="experiencia" class="bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-6xl px-5">
+        <div class="max-w-2xl">
+          <p class="text-sm font-extrabold uppercase tracking-wide text-emeraldTech-700">Experiencia</p>
+          <h2 class="mt-2 text-3xl font-extrabold text-navy-950 md:text-4xl">
+            Trayectoria en sistemas críticos
+          </h2>
+          <p class="mt-4 text-slate-700">
+            Experiencia construyendo plataformas confiables para operaciones empresariales,
+            integración de datos y modernización tecnológica.
+          </p>
+        </div>
+
+        <div class="mt-10 space-y-6 border-l-4 border-emeraldTech-600 pl-6">
+          <article class="relative rounded-xl bg-soft-50 p-6 shadow-sm">
+            <span class="absolute -left-[35px] top-6 h-5 w-5 rounded-full border-4 border-white bg-emeraldTech-700" aria-hidden="true"></span>
+            <p class="text-sm font-bold text-emeraldTech-700">Grupo Quality Motors</p>
+            <h3 class="mt-1 text-xl font-extrabold text-navy-900">Full Stack Developer</h3>
+            <p class="mt-3 text-slate-700">
+              Desarrollo y mantenimiento de soluciones internas, automatización de procesos,
+              integraciones empresariales y mejora de flujos operativos.
+            </p>
+          </article>
+
+          <article class="relative rounded-xl bg-soft-50 p-6 shadow-sm">
+            <span class="absolute -left-[35px] top-6 h-5 w-5 rounded-full border-4 border-white bg-emeraldTech-700" aria-hidden="true"></span>
+            <p class="text-sm font-bold text-emeraldTech-700">Arkkosoft</p>
+            <h3 class="mt-1 text-xl font-extrabold text-navy-900">Software Engineer</h3>
+            <p class="mt-3 text-slate-700">
+              Construcción de aplicaciones web y servicios backend con enfoque en escalabilidad,
+              calidad de código y arquitectura mantenible.
+            </p>
+          </article>
+
+          <article class="relative rounded-xl bg-soft-50 p-6 shadow-sm">
+            <span class="absolute -left-[35px] top-6 h-5 w-5 rounded-full border-4 border-white bg-emeraldTech-700" aria-hidden="true"></span>
+            <p class="text-sm font-bold text-emeraldTech-700">Sociedad de Seguros de Vida</p>
+            <h3 class="mt-1 text-xl font-extrabold text-navy-900">Full Stack Developer</h3>
+            <p class="mt-3 text-slate-700">
+              Participación en sistemas del sector seguros, autenticación segura, bases de datos
+              Oracle y SQL Server, y soluciones alineadas a entornos regulados.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades / Esqueleto: tecnologías agrupadas por categoría. -->
+    <section id="habilidades" class="bg-soft-50 py-16 md:py-24">
+      <div class="mx-auto max-w-6xl px-5">
+        <div class="max-w-2xl">
+          <p class="text-sm font-extrabold uppercase tracking-wide text-emeraldTech-700">Bóveda de habilidades</p>
+          <h2 class="mt-2 text-3xl font-extrabold text-navy-950 md:text-4xl">
+            Stack técnico organizado para entregar valor
+          </h2>
+        </div>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <article class="rounded-xl bg-white p-6 shadow-neo">
+            <div class="text-3xl text-emeraldTech-700" aria-hidden="true">⚛</div>
+            <h3 class="mt-4 text-xl font-extrabold text-navy-900">Frontend</h3>
+            <ul class="mt-4 space-y-2 text-slate-700">
+              <li>React</li>
+              <li>Angular</li>
+              <li>HTML5 / CSS3</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </article>
+
+          <article class="rounded-xl bg-white p-6 shadow-neo">
+            <div class="text-3xl text-emeraldTech-700" aria-hidden="true">⌘</div>
+            <h3 class="mt-4 text-xl font-extrabold text-navy-900">Backend</h3>
+            <ul class="mt-4 space-y-2 text-slate-700">
+              <li>.NET Core / Framework</li>
+              <li>C#</li>
+              <li>Java Spring</li>
+              <li>Node.js</li>
+            </ul>
+          </article>
+
+          <article class="rounded-xl bg-white p-6 shadow-neo">
+            <div class="text-3xl text-emeraldTech-700" aria-hidden="true">☁</div>
+            <h3 class="mt-4 text-xl font-extrabold text-navy-900">Cloud</h3>
+            <ul class="mt-4 space-y-2 text-slate-700">
+              <li>Microsoft Azure</li>
+              <li>Integraciones cloud</li>
+              <li>Despliegues automáticos</li>
+              <li>Azure Fundamentals</li>
+            </ul>
+          </article>
+
+          <article class="rounded-xl bg-white p-6 shadow-neo">
+            <div class="text-3xl text-emeraldTech-700" aria-hidden="true">▦</div>
+            <h3 class="mt-4 text-xl font-extrabold text-navy-900">Bases de datos</h3>
+            <ul class="mt-4 space-y-2 text-slate-700">
+              <li>Oracle</li>
+              <li>PL/SQL</li>
+              <li>APEX 24</li>
+              <li>SQL Server</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logros clave: cards enfocadas en impacto técnico y negocio. -->
+    <section id="logros" class="bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-6xl px-5">
+        <div class="max-w-2xl">
+          <p class="text-sm font-extrabold uppercase tracking-wide text-emeraldTech-700">Logros clave</p>
+          <h2 class="mt-2 text-3xl font-extrabold text-navy-950 md:text-4xl">
+            Proyectos con impacto operativo y seguridad
+          </h2>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <article class="rounded-xl border border-soft-200 bg-soft-50 p-7 shadow-sm">
+            <p class="text-sm font-bold text-emeraldTech-700">Automatización</p>
+            <h3 class="mt-2 text-2xl font-extrabold text-navy-900">
+              Sistemas automáticos de despliegue
+            </h3>
+            <p class="mt-4 leading-7 text-slate-700">
+              Implementación de flujos que reducen intervención manual, aceleran entregas y
+              mejoran la trazabilidad en ambientes empresariales.
+            </p>
+          </article>
+
+          <article class="rounded-xl border border-soft-200 bg-soft-50 p-7 shadow-sm">
+            <p class="text-sm font-bold text-emeraldTech-700">Seguridad</p>
+            <h3 class="mt-2 text-2xl font-extrabold text-navy-900">
+              Autenticación 2FA
+            </h3>
+            <p class="mt-4 leading-7 text-slate-700">
+              Desarrollo de mecanismos de doble factor para fortalecer accesos, proteger datos
+              sensibles y elevar el cumplimiento en sistemas críticos.
+            </p>
+          </article>
+
+          <article class="rounded-xl border border-soft-200 bg-soft-50 p-7 shadow-sm md:col-span-2">
+            <p class="text-sm font-bold text-emeraldTech-700">Cloud</p>
+            <h3 class="mt-2 text-2xl font-extrabold text-navy-900">
+              Integraciones en Microsoft Azure
+            </h3>
+            <p class="mt-4 leading-7 text-slate-700">
+              Conexión de servicios, aplicaciones y datos para modernizar plataformas y habilitar
+              arquitecturas más flexibles, seguras y preparadas para escalar.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto / Superficie: formulario funcional vía mailto y enlaces directos. -->
+    <section id="contacto" class="bg-navy-950 py-16 text-white md:py-24">
+      <div class="mx-auto grid max-w-6xl gap-10 px-5 md:grid-cols-[0.9fr_1.1fr] md:items-start">
+        <div>
+          <p class="text-sm font-extrabold uppercase tracking-wide text-emeraldTech-400">Contacto</p>
+          <h2 class="mt-2 text-3xl font-extrabold md:text-4xl">
+            Conectemos para construir sistemas confiables
+          </h2>
+          <p class="mt-4 leading-7 text-slate-200">
+            Disponible para conversaciones sobre desarrollo full stack, sistemas empresariales,
+            modernización cloud y productos digitales para sectores regulados.
+          </p>
+
+          <div class="mt-8 space-y-3 text-slate-100">
+            <p>
+              <strong>Correo:</strong>
+              <a href="mailto:duglasbrenes@gmail.com" class="text-emeraldTech-400 hover:underline">
+                duglasbrenes@gmail.com
+              </a>
+            </p>
+            <p>
+              <strong>Teléfono:</strong>
+              <a href="tel:+50600000000" class="text-emeraldTech-400 hover:underline">
+                +506 0000-0000
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <form
+          action="mailto:duglasbrenes@gmail.com"
+          method="post"
+          enctype="text/plain"
+          class="rounded-2xl bg-white p-6 text-slate-800 shadow-neo"
+        >
+          <div class="grid gap-5">
+            <div>
+              <label for="nombre" class="mb-2 block text-sm font-bold text-navy-900">Nombre</label>
+              <input
+                id="nombre"
+                name="nombre"
+                type="text"
+                required
+                class="w-full rounded-lg border border-soft-200 bg-soft-50 px-4 py-3 text-slate-900 focus:border-emeraldTech-700 focus:outline-none focus:ring-4 focus:ring-emeraldTech-400/30"
+                placeholder="Tu nombre"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="mb-2 block text-sm font-bold text-navy-900">Correo</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                class="w-full rounded-lg border border-soft-200 bg-soft-50 px-4 py-3 text-slate-900 focus:border-emeraldTech-700 focus:outline-none focus:ring-4 focus:ring-emeraldTech-400/30"
+                placeholder="tu@email.com"
+              />
+            </div>
+
+            <div>
+              <label for="mensaje" class="mb-2 block text-sm font-bold text-navy-900">Mensaje</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                required
+                class="w-full resize-none rounded-lg border border-soft-200 bg-soft-50 px-4 py-3 text-slate-900 focus:border-emeraldTech-700 focus:outline-none focus:ring-4 focus:ring-emeraldTech-400/30"
+                placeholder="Cuéntame sobre la oportunidad o proyecto"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="rounded-xl bg-emeraldTech-700 px-6 py-3 text-base font-extrabold text-white shadow-neo transition hover:bg-emeraldTech-600 focus:outline-none focus:ring-4 focus:ring-emeraldTech-400/50"
+            >
+              Enviar mensaje
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: cierre sobrio y consistente con la marca profesional. -->
+  <footer class="bg-white py-6">
+    <div class="mx-auto flex max-w-6xl flex-col gap-2 px-5 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
+      <p>© 2026 Duglas Brenes Solís. Todos los derechos reservados.</p>
+      <p>Senior Full Stack Developer · .NET · Java · Azure · Oracle</p>
+    </div>
+  </footer>
+</body>
+</html>
