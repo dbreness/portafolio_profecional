@@ -96,8 +96,11 @@
 
           <div class="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
+              id="download-cv"
               href="DOUGLAS_BRENES_SOLIS.pdf"
-              download
+              download="Duglas-Brenes-Solis-CV.pdf"
+              target="_blank"
+              rel="noopener"
               class="inline-flex items-center justify-center rounded-xl bg-emeraldTech-700 px-6 py-3 text-base font-bold text-white shadow-neo transition hover:bg-emeraldTech-600 focus:outline-none focus:ring-4 focus:ring-emeraldTech-400/50"
               aria-label="Descargar CV de Duglas Brenes Solís en PDF"
             >
@@ -388,5 +391,30 @@
       <p>Senior Full Stack Developer · .NET · Java · Azure · Oracle</p>
     </div>
   </footer>
+
+  <!-- Descarga robusta del CV: intenta descargar el PDF y deja nueva pestaña como respaldo. -->
+  <script>
+    const cvButton = document.getElementById("download-cv");
+
+    cvButton?.addEventListener("click", async (event) => {
+      event.preventDefault();
+
+      try {
+        const response = await fetch(cvButton.href);
+        const file = await response.blob();
+        const fileUrl = URL.createObjectURL(file);
+        const temporaryLink = document.createElement("a");
+
+        temporaryLink.href = fileUrl;
+        temporaryLink.download = "Duglas-Brenes-Solis-CV.pdf";
+        document.body.appendChild(temporaryLink);
+        temporaryLink.click();
+        temporaryLink.remove();
+        URL.revokeObjectURL(fileUrl);
+      } catch (error) {
+        window.open(cvButton.href, "_blank", "noopener");
+      }
+    });
+  </script>
 </body>
 </html>
